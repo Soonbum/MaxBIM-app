@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF에 텍스트 붙이기 프로그램</title>
+    <meta http-equiv="Content-Language" content="ko-KR">
+    <meta name="Author" content="Soonbum Jeong">
+</head>
+<body>
+<h1>PDF에 텍스트 붙이기 프로그램</h1>
+<form>
+    <p>본 프로그램은 MaxBIM 애드온(ArchiCAD 19)의 "모든 입면도 PDF로 내보내기 (Multi 모드)" 기능을 통해 생성된 pdf 파일 내부에 텍스트를 부착합니다. 텍스트 내용은 기본적으로 파일명입니다.</p>
+    <p>
+        <h2>사용법</h2>
+        <ol>
+            <li>C:\ 디렉토리에 변환하기를 원하는 모든 PDF 파일을 복사하십시오.</li>
+            <li>아래의 "파일 선택" 버튼을 선택한 후 변환할 모든 PDF 파일을 선택하십시오.</li>
+            <li>"저장하기" 버튼을 누르고 저장할 위치를 선택하면 변환된 PDF 파일이 생성됩니다.</li>
+        </ol>
+    </p>
+    <hr>
+    <p>
+        <label>1. 파일열기</label> <input id="file" type="file" accept="application/pdf" multiple>
+    </p>
+    <p>
+        <button id="save" type="button">저장하기</button>
+    </p>
+    <p>
+        <a href="../index.html">메인 메뉴로 이동</a>
+    </p>
+</form>
+</body>
+<script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+<script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+<script src="https://unpkg.com/downloadjs@1.4.7"></script>
+<script type="text/javascript" src="attachTextOnPdf.js"></script>
+</HTML>

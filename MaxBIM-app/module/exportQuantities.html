@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>물량산출표 작성 프로그램</title>
+    <meta http-equiv="Content-Language" content="ko-KR">
+    <meta name="Author" content="Soonbum Jeong">
+</head>
+<body>
+<h1>물량산출표 작성 프로그램</h1>
+<form>
+    <p>본 프로그램은 MaxBIM 애드온(ArchiCAD 19)의 "선택한 부재 정보 내보내기 (Single 모드)" 기능을 통해 생성된 중간보고서 txt 파일을 필요로 합니다.</p>
+    <p>
+        <label>1. 파일열기</label> <input id="file" type="file" accept="text/plain" multiple>
+    </p>
+    <p>
+        <label>2. 제목</label> <input id="title" type="text" required>
+    </p>
+    <p>
+        <label>3. 날짜</label> <input id="date" type="date" required>
+    </p>
+    <p>
+        <button id="save" type="button">저장하기</button>
+    </p>
+    <p>
+        <a href="../index.html">메인 메뉴로 이동</a>
+    </p>
+</form>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+<script type="text/javascript" src="exportQuantities.js"></script>
+</HTML>
