@@ -14,13 +14,17 @@
         <h2>사용법</h2>
         <ol>
             <li>C:\ 디렉토리에 변환하기를 원하는 모든 PDF 파일을 복사하십시오.</li>
+            <li>만약 레이어에 대한 설명 텍스트도 추가하고 싶다면 layer.csv 파일을 선택하십시오.</li>
             <li>아래의 "파일 선택" 버튼을 선택한 후 변환할 모든 PDF 파일을 선택하십시오.</li>
             <li>"저장하기" 버튼을 누르고 저장할 위치를 선택하면 변환된 PDF 파일이 생성됩니다.</li>
         </ol>
     </p>
     <hr>
     <p>
-        <label>1. 파일열기</label> <input id="file" type="file" accept="application/pdf" multiple>
+        <label>1. PDF 파일열기</label> <input id="file" type="file" accept="application/pdf" multiple>
+    </p>
+    <p>
+        <label>2. layer.csv 파일열기</label> <input id="csv" type="file" accept="text/csv" multiple>
     </p>
     <p>
         <button id="save" type="button">저장하기</button>
