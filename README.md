@@ -43,7 +43,7 @@ PDF에 텍스트 붙이기 프로그램: MaxBIM 애드온(ArchiCAD 19)의 "모�
     
   - main.js
   
-  ```
+  ```js
   const { app, BrowserWindow } = require('electron')
   const path = require('path')
 
@@ -78,7 +78,7 @@ PDF에 텍스트 붙이기 프로그램: MaxBIM 애드온(ArchiCAD 19)의 "모�
   
   - index.html
   
-  ```
+  ```html
   <!DOCTYPE html>
   <html>
   <head>
@@ -99,7 +99,7 @@ PDF에 텍스트 붙이기 프로그램: MaxBIM 애드온(ArchiCAD 19)의 "모�
   
   - preload.js
   
-  ```
+  ```js
   window.addEventListener('DOMContentLoaded', () => {
     const replaceText = (selector, text) => {
       const element = document.getElementById(selector)
